@@ -1,0 +1,22 @@
+<section>
+	<div class="container">
+		<h2 class="title-2">Font auto-generation and CSS integration</h2>
+
+
+		<ol>
+			<li>Place TTF and OTF fonts in <code>src/fonts/</code></li>
+			<li>During build, OTF is converted to TTF inside <code>src/fonts/</code>.</li>
+			<li>Then TTF is converted to WOFF and WOFF2 from <code>src/fonts/</code> to <code>build/fonts/</code>.</li>
+			<li>CSS inclusion styles are generated inside <code>src/scss/base/_fontsAutoGen.scss</code>.<br> Important! This
+				file is generated and overwritten automatically.</li>
+		</ol>
+
+		<p>
+			Example:
+		</p>
+
+		<p class="font-1">Hello, world! Привет, мир!</p>
+		<p class="font-2">Hello, world! Привет, мир!</p>
+
+	</div>
+</section>

@@ -1,0 +1,42 @@
+<main class="docs">
+	<section>
+		<div class="container">
+			<h1 class="title-1">Documentation</h1>
+			<p>Documentation and capabilities of the build and starter template</p>
+
+			<p>
+				Launching in development mode: <code>gulp</code><br>
+				Building optimized version for production: <code>gulp docs</code>
+			</p>
+
+			<h3 class="title-3">Starter template capabilities</h3>
+			<ul>
+				<li>Ready-made styles for CSS containers for all life situations.</li>
+				<li>Mixins and snippets for responsiveness.</li>
+				<li>Mixin and snippet for CSS retina background images.</li>
+			</ul>
+
+			<h3 class="title-3">Build capabilities</h3>
+
+			<ul>
+				<li>Auto-correction of paths. Feel free to use editor hints when specifying file paths.
+					The build will automatically remove unnecessary upward references <code>../../</code> in src HTML and background-image in SCSS.</li>
+				<li>Automatic generation of SVG sprites. See details below.</li>
+			</ul>
+
+			<h3 class="title-3">Production build features with gulp docs</h3>
+			<ul>
+				<li>Automatic compression of jpg images</li>
+				<li>Automatic generation of webp graphics and specifying webp format in HTML.</li>
+				<li>When specifying the img tag, it's not necessary to include srcset with 2x. The 'gulp-webp-retina-html' plugin in the 'html:dev' task automatically adds the picture tag and source for 2x images. Make sure to save images in @2x resolution.</li>
+			</ul>
+
+		</div>
+	</section>
+	@@include('blocks/fonts.html')
+	@@include('blocks/snippets.html')
+	@@include('blocks/svgsprite.html')
+	@@include('blocks/gulp-file-include.html')
+	@@include('blocks/typo.html')
+	@@include('blocks/containers.html')
+</main>
