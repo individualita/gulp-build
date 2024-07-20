@@ -20,4 +20,4 @@ ENG. Build for production:
 gulp docs
 ```
 
-[Смотреть демо](https://user.github.io/repo/)
+
